@@ -1,4 +1,25 @@
-<ion-tabs>
+<!-- <ion-tabs>
   <ion-tab tabIcon="clipboard" [root]="solicitacao"></ion-tab>
   <ion-tab tabIcon="calendar" [root]="agendamento"></ion-tab>
-</ion-tabs>
+</ion-tabs> -->
+
+
+<ion-header>
+
+  <ion-navbar>
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Boards </ion-title>
+
+    <ion-tabs>
+      <ion-tab [root]="solicitacao" tabTitle="SOLICITAÇÃO"></ion-tab>
+      <ion-tab [root]="agendamento" tabTitle="AGENDAMENTO"></ion-tab>
+    </ion-tabs>
+
+  </ion-navbar>
+
+
+</ion-header>
